@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+    <img src="images/pattern-circles.svg" alt="">
+  </header>
+  <main>
+    <div class="card">
+      <div class="pricing flex">
+        <span class="pageviews"><span class="num-pageviews">100K</span> Pageviews</span>
+        <span class="price-section"><span class="price">$16.00</span> / month</span>
+        <div class="slider-container">
+            <input type='range' min='0' max='5' id='price-range' name='price-range' class='slider'></input>
+          <div class="progress-track"></div>
+        </div>
+        <div class="month-year-check">
+          <span>Monthly Billing</span>
+          <div class="toggle-checkbox">
+            <input id='checkbox' type="checkbox">
+            <label for='checkbox' class="switch">
+              <span class='switch-slider'></span>
+            </label>
+          </div> 
+          <span>Yearly Billing</span>
+          <div class='discount'>25% <span>discount</span></div>
+        </div>
+      </div> 
+      <div class="cta flex">
+        <div class="checks flex">
+          <span class='checks-item'>Unlimited websites</span>
+          <span class='checks-item'>100% data ownership</span>
+          <span class='checks-item'>Email reports</span>
+        </div>
+        <button class='btn'>Start my trial</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
