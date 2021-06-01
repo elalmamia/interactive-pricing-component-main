@@ -159,11 +159,12 @@ header img{
     height: 1.5rem;
     width: 3rem;
 }
-.toggle-checkbox input{
+#checkbox{
     opacity:0;
     width:0;
     height:0;
 }
+
 .switch{
     position: absolute;
     top: 0;
@@ -173,6 +174,12 @@ header img{
     background-color: var(--toggle-background-color);
     border-radius: 1.5rem;
     cursor: pointer;
+}
+#checkbox:focus-visible{
+    opacity: 1;
+    height: 1.5rem;
+    width: 3rem;
+    outline: 1px solid black;    
 }
 .switch-slider{
     position: absolute;
