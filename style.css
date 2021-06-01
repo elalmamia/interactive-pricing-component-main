@@ -96,6 +96,8 @@ header img{
     color: var(--dark-text-color);
     margin-right: .5rem;
 }
+
+/* ============SLIDER============= */
 .slider-container{
     padding: 2rem 0;
     text-align: center;
@@ -133,9 +135,15 @@ header img{
     border-radius: 50%;
     box-shadow: 0 17px 16px 2px hsla(174, 86%, 45%, 0.5);
 }
+.slider::-webkit-slider-thumb:hover{
+    opacity: 0.8;
+}
+.slider::-webkit-slider-thumb:focus{
+    opacity: 0.8;
+}
 
 
-/* ================ TOGGLE ==================== */
+/* ================ TOGGLE SWITCH==================== */
 
 .month-year-check{
     display: flex;
@@ -143,9 +151,7 @@ header img{
     width: 100%;
     justify-content: flex-end;
     padding-top: 2rem;
-    padding-bottom: 1rem;
-    
-    
+    padding-bottom: 1rem;  
 }
 .toggle-checkbox{
     position: relative;
@@ -188,6 +194,7 @@ header img{
     -ms-transform: translate(1.5rem);
     transform: translate(1.5rem);  
 }
+
 .discount{
     align-self: center;
     background-color: var(--discount-background-color);
@@ -222,6 +229,11 @@ header img{
     background: var(--cta-background-color);
     font-weight: 600;
     border-radius: 1.5rem;
+    transition: color 150ms ease;
+}
+.btn:hover{
+    cursor: pointer;
+    color: var(--card-background-color);
 }
 footer{
     padding: 3rem;
@@ -253,7 +265,7 @@ footer{
     }
     .pricing{
      justify-content: center;
-     padding: 0 1rem;
+     padding: 0 3rem;
     }
     .pageviews{
         font-size: 0.9rem;
@@ -272,5 +284,10 @@ footer{
     }
     .btn{
         margin-top: 1.5rem;
+    }
+}
+@media(max-width: 430px){
+    .pricing{
+        padding: 0 1.5rem;
     }
 }
